@@ -1,12 +1,6 @@
 <?php
 return array(
     
-    // 授权码，多个授权码使用英文逗号隔开，如：'aaaaa,bbbbb'
-    'sn' => '281BE285D7',
-    
-    // 授权用户手机
-    'sn_user' => '',
-    
     // 模板内容输出缓存开关
     'tpl_html_cache' => 0,
     
@@ -46,4 +40,3 @@ return array(
     )
 
 );
- 

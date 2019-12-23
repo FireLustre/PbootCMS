@@ -14,7 +14,7 @@ require dirname(__FILE__) . '/init.php';
 defined('IS_INDEX') ?: die('不允许直接访问框架内核启动文件！');
 
 // 启动内核
-core\basic\Kernel::run(); 
+core\basic\Kernel::run();
 
  
 

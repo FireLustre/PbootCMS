@@ -56,6 +56,9 @@ class UpgradeController extends Controller
     // 检查更新
     public function check()
     {
+        json(1, '已是最新版本！');
+        return;
+
         // 清理目录，检查下载目录及备份目录
         path_delete(RUN_PATH . '/upgrade', true);
         if (! check_dir(RUN_PATH . '/upgrade', true)) {

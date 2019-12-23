@@ -27,7 +27,8 @@ class IndexController extends Controller
         if (session('sid')) {
             location(url('admin/Index/home'));
         }
-        $this->assign('admin_check_code', $this->config('admin_check_code'));
+//        $this->assign('admin_check_code', $this->config('admin_check_code'));
+        $this->assign('admin_check_code', 0);
         $this->display('index.html');
     }
 
@@ -98,9 +99,9 @@ class IndexController extends Controller
         }
         
         // 在安装了gd库时才执行验证码验证
-        if (extension_loaded("gd") && $this->config('admin_check_code') && strtolower(post('checkcode', 'var')) != session('checkcode')) {
-            json(0, '验证码错误！');
-        }
+//        if (extension_loaded("gd") && $this->config('admin_check_code') && strtolower(post('checkcode', 'var')) != session('checkcode')) {
+//            json(0, '验证码错误！');
+//        }
         
         // 就收数据
         $username = post('username');
