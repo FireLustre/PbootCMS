@@ -35,21 +35,21 @@
 					<label class="user-login-icon layui-icon layui-icon-password"></label>
 					<input name="password" id="password" type="password" lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
 				</div>
-<!--				{if([$config.admin_check_code])}-->
-<!--				<div class="layui-form-item">-->
-<!--					<div class="layui-row">-->
-<!--						<div class="layui-col-xs7 layui-col-sm8">-->
-<!--							<label class="user-login-icon layui-icon layui-icon-vercode" ></label>-->
-<!--							<input name="checkcode" id="checkcode" type="text" lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">-->
-<!--						</div>-->
-<!--						<div class="layui-col-xs5 layui-col-sm4">-->
-<!--							<div style="margin-left: 10px;">-->
-<!--								<img title="点击刷新"  src="{CORE_DIR}/code.php" class="user-login-codeimg" id="codeimg" onclick="this.src='{CORE_DIR}/code.php?'+Math.round(Math.random()*10);" />-->
-<!--						    </div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				{/if}-->
+				{if([$config.admin_check_code])}
+				<div class="layui-form-item">
+					<div class="layui-row">
+						<div class="layui-col-xs7 layui-col-sm8">
+							<label class="user-login-icon layui-icon layui-icon-vercode" ></label>
+							<input name="checkcode" id="checkcode" type="text" lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+						</div>
+						<div class="layui-col-xs5 layui-col-sm4">
+							<div style="margin-left: 10px;">
+								<img title="点击刷新"  src="{CORE_DIR}/code.php" class="user-login-codeimg" id="codeimg" onclick="this.src='{CORE_DIR}/code.php?'+Math.round(Math.random()*10);" />
+						    </div>
+						</div>
+					</div>
+				</div>
+				{/if}
 				<div class="layui-form-item">
 					<button class="layui-btn layui-btn-fluid" lay-submit lay-filter="login-submit" >登 录</button>
 				</div>
